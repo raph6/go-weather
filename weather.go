@@ -16,19 +16,11 @@ type Weather struct {
 }
 
 type Meteo struct {
-	Id        int64   `json:"id"`
 	Abbr      string  `json:"weather_state_abbr"`
 	Temp      float64 `json:"the_temp"`
-	MinTemp   float64 `json:"min_temp"`
-	MaxTemp   float64 `json:"max_temp"`
 	WindSpeed float64 `json:"wind_speed"`
 	Humidity  float64 `json:"humidity"`
 	Updated   string  `json:"created"`
-}
-
-type Process struct {
-	pid int
-	cpu float64
 }
 
 func weather(abbr string) string {
